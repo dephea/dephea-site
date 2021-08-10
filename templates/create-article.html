@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-About us
+New member
 {% endblock %}
 
 {% block body %}
@@ -10,7 +10,7 @@ About us
 <div class="container-xxl">
     <center><h1>New member</h1></center>
     <div class="container">
-        <form action="/create-article" method="post">
+        <form action="/create-article" method="POST">
             <input type="text" name="title" id="title" class="form-control" placeholder="Input title"><br>
             <textarea type="text" name="text" id="text" class="form-control" placeholder="Input text"></textarea><br>
             <input id="button" type="submit" class="btn btn-success" value="Create">

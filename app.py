@@ -35,6 +35,17 @@ def member_about(id):
     member = Article.query.get(id)
     return render_template("member_about.html", member=member)
 
+@app.route('/member/<int:id>/del')
+def member_delete(id):
+    member = Article.query.get_or_404(id)
+
+    try:
+        db.session.delete(member)
+        db.session.commit()
+        return redirect('/member')
+    except:
+        return "ERROR WHILE DELETING A MEMBER"
+
 
 @app.route('/about')
 def about():
@@ -56,6 +67,22 @@ def create_article():
             return "ERROR WHILE ADDING A NEW MEMBER"
     else:
         return render_template("create-article.html")
+
+
+@app.route('/member/<int:id>/update', methods=['POST', 'GET'])
+def member_update(id):
+    member = Article.query.get(id)
+    if request.method == "POST":
+        member.title = request.form['title']
+        member.text = request.form['text']
+
+        try:
+            db.session.commit()
+            return redirect("/member")
+        except:
+            return "ERROR WHILE ADDING A NEW MEMBER"
+    else:
+        return render_template("member_update.html", member=member)
 
 
 
