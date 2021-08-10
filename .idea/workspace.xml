@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afb9c44d-cb69-4b9a-bc53-6bb87818f03b" name="Default Changelist" comment="added edit and delete buttons">
-      <change beforePath="$PROJECT_DIR$/eyes.db" beforeDir="false" afterPath="$PROJECT_DIR$/eyes.db" afterDir="false" />
-    </list>
+    <list default="true" id="afb9c44d-cb69-4b9a-bc53-6bb87818f03b" name="Default Changelist" comment="added edit and delete buttons" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627052805841</updated>
-      <workItem from="1628606306846" duration="6194000" />
+      <workItem from="1628606306846" duration="6509000" />
     </task>
     <task id="LOCAL-00001" summary="added edit and delete buttons">
       <created>1628609986180</created>
