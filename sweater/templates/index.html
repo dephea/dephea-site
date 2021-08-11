@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+OG
+{% endblock %}
+
+{% block body %}
+
+<div class="container-xxl">
+    <form method="post" action="/add_message">
+      <input type="text" name="text" placeholder="Text">
+      <button type="submit" class="btn btn-primary">Add message</button>
+
+    </form>
+  <p>Messages list</p>
+  {% for message in messages %}
+  <div class="alert">{{message.text}}</div>
+  {% endfor %}
+
+</div>
+
+
+{% endblock %}
